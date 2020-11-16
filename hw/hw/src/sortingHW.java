@@ -6,7 +6,7 @@ public class sortingHW {
     public static void intSorter(int[] list){
         boolean sorted = false;
         int highest=0;
-        int counter =0;
+        int sorted =0;
         while(sorted==false){
             int previousHighest = highest;
             for(int i=0; i<list.length; i++){
