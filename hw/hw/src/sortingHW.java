@@ -6,7 +6,7 @@ public class sortingHW {
     public static void intSorter(int[] list){
         boolean sorted = false;
         int highest=0;
-        int sorted =0;
+        int counter=0;
         while(sorted==false){
             int previousHighest = highest;
             for(int i=0; i<list.length; i++){
@@ -37,6 +37,15 @@ public class sortingHW {
         }
     }
 
+    public static int averageCalculator(int[]list){
+        int total=0;
+        for(int i=0; i<list.length; i++){
+            total += list[i];
+        }
+        int avg = total/list.length;
+        return avg;
+    }
+
 
     public static void main(String[]args){
         int temp;
@@ -53,6 +62,9 @@ public class sortingHW {
          
         intSorter(numsToSort);
         arrayPrinter(numsToSort);
+        System.out.println("Highest value was- " + numsToSort[numsToSort.length-1]);
+        System.out.println("Lowest value was- " + numsToSort[0]);
+        System.out.println("Average value was- " + averageCalculator(numsToSort));
 
 
         
